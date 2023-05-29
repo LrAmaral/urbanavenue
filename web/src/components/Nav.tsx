@@ -10,7 +10,7 @@ export const Nav = () => {
 
   return (
     <nav className="w-full bg-white p-4 text-black">
-      <div className=" flex w-full p-2 xs:flex-row xs:items-center xs:justify-between xs:gap-0 lg:flex-row lg:items-center lg:justify-evenly lg:gap-[70vh]">
+      <div className="flex w-full p-2 xs:flex-row xs:items-center xs:justify-between xs:gap-0 lg:flex-row lg:items-center lg:justify-evenly lg:gap-[60vh]">
         <div className="flex items-center justify-center xs:flex-col xs:gap-1 lg:flex-row lg:gap-40 ">
           <Link href="/" className="xs:text-3xl lg:text-4xl">
             UrbanAvenue

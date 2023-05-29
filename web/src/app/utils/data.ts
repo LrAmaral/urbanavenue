@@ -264,6 +264,19 @@ const data = {
       stock: 5,
     },
   ],
+
+  users: [
+    {
+      id: 1,
+      email: 'amaral@gmail.com',
+      password: '123',
+    },
+    {
+      id: 2,
+      email: 'joao@gmail.com',
+      password: '345',
+    },
+  ],
 }
 
 export default data

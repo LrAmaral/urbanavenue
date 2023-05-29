@@ -1,13 +1,14 @@
 'use client'
 
+import { Eye, EyeSlash } from '@phosphor-icons/react'
 import Link from 'next/link'
 import { useState } from 'react'
 
 export const Form = () => {
-  const [showPassword, setShowPassword] = useState(false)
+  const [visiPassword, setVisiPassword] = useState(false)
 
-  const togglePasswordVisibility = () => {
-    setShowPassword(!showPassword)
+  function toggleVisiPassword() {
+    return setVisiPassword(!visiPassword)
   }
 
   return (
@@ -29,14 +30,15 @@ export const Form = () => {
           <form
             action=""
             method="post"
-            className="flex flex-col items-start justify-center gap-1"
+            className="flex w-3/4 flex-col items-start justify-center gap-1"
           >
             <label className="mt-3 font-semibold">First name: </label>
             <input
               type="text"
               id="first"
               title="name"
-              className="rounded-xl border-2 p-2 px-4 focus:outline-zinc-300"
+              pattern="[A-Za-z]+"
+              className="w-full border-2 p-1 px-2 focus:outline-zinc-300"
               required
             />
             <label className="mt-3 font-semibold">Last name: </label>
@@ -44,7 +46,8 @@ export const Form = () => {
               type="text"
               title="name"
               id="last"
-              className="rounded-xl border-2 p-2 px-4 focus:outline-zinc-300"
+              pattern="[A-Za-z]+"
+              className="w-full border-2 p-1 px-2 focus:outline-zinc-300"
               required
             />
             <label className="mt-3 font-semibold">E-mail: </label>
@@ -52,28 +55,50 @@ export const Form = () => {
               type="text"
               title="email"
               id="email"
-              className="rounded-xl border-2 p-2 px-4 focus:outline-zinc-300"
+              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+              className="w-full border-2 p-1 px-2 focus:outline-zinc-300"
               required
             />
-            <label className="mt-3 font-semibold">Password: </label>
-            <input
-              type={showPassword ? 'text' : 'password'}
-              title="password"
-              id="password"
-              className="rounded-xl border-2 p-2 px-4 focus:outline-zinc-300"
-              required
-            />
-            <button
-              title="password"
-              type="button"
-              onClick={togglePasswordVisibility}
-              className="flex cursor-pointer items-center text-gray-600"
-            ></button>
+            <label className="relative mt-3 flex w-full flex-col font-semibold">
+              Password:
+              <input
+                type={visiPassword ? 'password' : 'text'}
+                title="password"
+                id="password"
+                className=" border-2 p-1 px-2 focus:outline-zinc-300 "
+                required
+              />
+              {visiPassword === false ? (
+                <button
+                  type="button"
+                  onClick={toggleVisiPassword}
+                  className="w-fit"
+                >
+                  <Eye
+                    size={24}
+                    weight="thin"
+                    className="absolute right-2 top-[30px]"
+                  />
+                </button>
+              ) : (
+                <button
+                  type="button"
+                  onClick={toggleVisiPassword}
+                  className="w-fit"
+                >
+                  <EyeSlash
+                    size={24}
+                    weight="thin"
+                    className="absolute right-2 top-[30px]"
+                  />
+                </button>
+              )}
+            </label>
             <div className="mt-4 flex w-full items-center justify-center">
               <button
                 type="submit"
                 value="Send"
-                className="rounded-xl bg-blue-600 p-2 text-white transition-colors ease-in-out hover:bg-black"
+                className="w-2/4 bg-blue-600 p-2 text-white transition-colors ease-in-out hover:bg-black"
               >
                 Submit
               </button>

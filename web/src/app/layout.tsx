@@ -29,7 +29,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       className={`${vollkorn.variable} ${kumbhsans.variable} font-sans`}
     >
       <body
-        className={`bg-white text-black scrollbar-thin scrollbar-track-white scrollbar-thumb-slate-300`}
+        className={`cursor-default select-none bg-white text-black scrollbar-thin scrollbar-track-white scrollbar-thumb-slate-300`}
       >
         <ShoppingCartProvider>{children}</ShoppingCartProvider>
       </body>

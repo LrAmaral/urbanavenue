@@ -38,6 +38,10 @@ module.exports = {
       variants: {
         scrollbar: ['rounded'],
       },
+      aspectRatio: {
+        '9/16': '4 / 3',
+        '16/9': '16 / 9',
+      },
     },
   },
   plugins: [require('tailwind-scrollbar')],
