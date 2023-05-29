@@ -15,7 +15,7 @@ export const Filter = (props: FunctionProps) => {
   }
 
   return (
-    <div className="grid gap-2 rounded-xl border-lime-600 p-1 font-alt">
+    <div className="grid gap-2 border-lime-600 font-alt">
       <h2 className="mb-10 flex justify-start font-bold">Filter by:</h2>
       <div className="grid justify-items-start gap-1">
         <h4 className="flex font-bold">Filter by size:</h4>

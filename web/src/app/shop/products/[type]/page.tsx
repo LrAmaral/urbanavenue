@@ -32,9 +32,9 @@ export default function Products(props: any) {
   }, [prodType])
 
   return (
-    <div id="" className="flex flex-col bg-white text-black">
+    <div className="flex flex-col bg-white text-black">
       <div className="grid gap-24 p-20 xs:h-auto xs:grid-cols-1 lg:h-auto lg:grid-cols-4">
-        <div className="col-span-1">
+        <div>
           <Filter
             Best={(size: string) => Best(size, setFilteredProducts)}
             onReset={() => handleResetClick(setFilteredProducts)}
