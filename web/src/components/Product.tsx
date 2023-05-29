@@ -10,6 +10,7 @@ export const Product = ({ id, url, image, title, price }: ProductProps) => {
           src={image}
           className="h-60 w-full object-cover transition-all"
           alt="image"
+          placeholder="blur"
           width={1920}
           height={1080}
         />
