@@ -11,7 +11,7 @@ export default function NavMobile() {
         <Link className="transition-colors hover:text-zinc-700" href="/look">
           lookbook
         </Link>
-        <Link href="/home/profile/1">
+        <Link href="/home">
           <User size={24} />
         </Link>
         <Link className="flex flex-row" href="/shop/cart">

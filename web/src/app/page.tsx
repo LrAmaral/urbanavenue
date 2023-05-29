@@ -8,7 +8,7 @@ export default function Main() {
     <div id="" className="flex flex-col items-center justify-center bg-white">
       <Nav />
       <Slider />
-      <div className="mt-4 xs:text-4xl lg:text-5xl">
+      <div className="mt-4 xs:text-3xl lg:text-5xl">
         <span className="underline decoration-blue-500 underline-offset-4">
           Flawless
         </span>{' '}
