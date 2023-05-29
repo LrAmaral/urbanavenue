@@ -3,7 +3,7 @@ import { Footer } from '@/components/Footer'
 import SelectCategories from '@/components/SelectCategories'
 import { Product } from '@/components/Product'
 import { api } from '@/lib/axios'
-import ProductProps from '@/interface/product'
+import { ProductProps } from '@/interface/product'
 
 export default async function All() {
   const response = await api.get('/product')

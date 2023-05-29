@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { api } from '@/lib/axios'
 import DescProduct from '@/components/DescProduct'
 import PageProductInfo from '@/components/PageProductInfo'
-import ProductProps from '@/interface/product'
+import { ProductProps } from '@/interface/product'
 
 export default async function PageProduct(props: any) {
   const prodId = props.params.id
