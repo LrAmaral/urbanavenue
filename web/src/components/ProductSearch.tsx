@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { SearchProps } from '@/@types/search'
+import { SearchProps } from '@/interface/search'
 
 export const ProductSearch = ({ url, id, title }: SearchProps) => {
   return (

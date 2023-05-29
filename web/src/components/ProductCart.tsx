@@ -1,4 +1,4 @@
-import { CartProps } from '@/@types/cart'
+import { CartProps } from '@/interface/cart'
 import Image from 'next/image'
 
 export default function Cart({ id, title, price, image, unity }: CartProps) {

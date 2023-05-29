@@ -5,9 +5,7 @@ import { FastifyInstance } from 'fastify'
 
 export async function productRoutes(app: FastifyInstance) {
   app.get('/product', async () => {
-    const product = await prisma.products.findMany({
-      
-    })
+    const product = await prisma.products.findMany()
   
     return product
   })

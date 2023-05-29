@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import SizeSelection from './SizeSelection'
-import { PageProductProps } from '@/@types/pageProduct'
+import { PageProductProps } from '@/interface/pageProduct'
 
 function PageProductInfo({ id, title, price, stock }: PageProductProps) {
   return (

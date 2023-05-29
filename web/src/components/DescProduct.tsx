@@ -1,4 +1,4 @@
-import { DescProps } from '@/@types/desc'
+import { DescProps } from '@/interface/desc'
 
 export default function DescProduct({ id, desc }: DescProps) {
   return (

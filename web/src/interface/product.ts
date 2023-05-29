@@ -1,4 +1,4 @@
-export interface ProductProps {
+export default interface ProductProps {
   url: string
   id: string
   type: string

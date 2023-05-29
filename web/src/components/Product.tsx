@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { ProductProps } from '@/@types/product'
+import { ProductProps } from '@/interface/product'
 
 export const Product = ({ id, url, image, title, price }: ProductProps) => {
   return (

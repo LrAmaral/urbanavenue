@@ -1,4 +1,4 @@
-import { FunctionProps } from '@/@types/filter'
+import { FunctionProps } from '@/interface/filter'
 
 export const Filter = (props: FunctionProps) => {
   const {
