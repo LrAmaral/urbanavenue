@@ -1,8 +1,8 @@
 import { Footer } from '@/components/Footer'
 import Image from 'next/image'
 import { api } from '@/lib/axios'
-import DescProduct from '@/components/DescProduct'
-import PageProductInfo from '@/components/PageProductInfo'
+import DescProduct from '../../components/DescProduct'
+import PageProductInfo from '../../components/PageProductInfo'
 import { ProductProps } from '@/interface/product'
 
 export default async function PageProduct(props: any) {

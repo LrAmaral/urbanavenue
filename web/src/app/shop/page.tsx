@@ -1,6 +1,6 @@
 import { Footer } from '@/components/Footer'
 // import CategoriesProducts from '@/components/CategoriesProducts'
-import SelectCategories from '@/components/SelectCategories'
+import SelectCategories from './components/SelectCategories'
 import { Product } from '@/components/Product'
 import { api } from '@/lib/axios'
 import { ProductProps } from '@/interface/product'

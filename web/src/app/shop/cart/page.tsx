@@ -2,7 +2,7 @@
 
 import data from '@/app/utils/data'
 import { Footer } from '@/components/Footer'
-import ProductCart from '@/components/ProductCart'
+import ProductCart from '../components/ProductCart'
 import { ShoppingCart } from '@phosphor-icons/react'
 
 export default function Cart() {
