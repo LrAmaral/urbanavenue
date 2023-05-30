@@ -8,7 +8,7 @@ datasource db {
 }
 
 model Products {
-  id     String   @id @default(uuid()) @map("_id") @db.ObjectId
+  id     String   @id @default(auto()) @map("_id") @db.ObjectId
   type   String
   title  String
   url    String
