@@ -14,7 +14,7 @@ app.register(productRoutes)
 
 app
   .listen({
-    port: 3333,
+    port: 3000,
   })
   .then(() => {
     // Assim que meu servidor estiver no ar, eu quero então executar uma função
