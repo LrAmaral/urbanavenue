@@ -4,7 +4,12 @@ import Link from 'next/link'
 import SizeSelection from './SizeSelection'
 import { PageProductProps } from '@/interface/pageProduct'
 
-function PageProductInfo({ id, title, price, stock }: PageProductProps) {
+export default function PageProductInfo({
+  id,
+  title,
+  price,
+  stock,
+}: PageProductProps) {
   return (
     <div
       key={id}
@@ -34,5 +39,3 @@ function PageProductInfo({ id, title, price, stock }: PageProductProps) {
     </div>
   )
 }
-
-export default PageProductInfo

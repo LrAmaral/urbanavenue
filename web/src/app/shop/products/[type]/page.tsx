@@ -1,6 +1,6 @@
 'use client'
 
-import { Filter } from '@/components/Filter'
+import { Filter } from '../../components/Filter'
 import { Footer } from '@/components/Footer'
 import { Product } from '@/components/Product'
 import { useEffect, useState } from 'react'
