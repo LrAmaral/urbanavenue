@@ -1,6 +1,5 @@
 import { Footer } from '@/components/Footer'
 // import CategoriesProducts from '@/components/CategoriesProducts'
-import SelectCategories from './components/SelectCategories'
 import { Product } from '@/components/Product'
 import data from '../utils/data'
 // import { api } from '@/lib/axios'
@@ -13,12 +12,10 @@ export default async function All() {
   return (
     <div className="flex flex-col bg-white text-black">
       <div className="mb-16 flex w-full flex-col items-center justify-center">
-        <SelectCategories />
         <div className="xs:col-span-1 lg:col-span-3">
           <div className="mt-6 grid justify-items-center gap-4">
-            <div className="mt-6 grid items-center font-alt xs:grid-cols-1 xs:gap-20 md:grid-cols-2 lg:grid-cols-4 lg:gap-10">
+            <div className="mt-6 grid w-full items-center font-alt xs:grid-cols-1 xs:gap-20 md:grid-cols-2 lg:grid-cols-4 lg:gap-16">
               {/* {data
-                .sort(() => Math.random() - 0.5)
                 .map((element) => (
                   <Product
                     url={`/shop/pageproduct/${element.id}`}
@@ -34,23 +31,21 @@ export default async function All() {
                     quantity={0}
                   />
                 ))} */}
-              {data.product
-                .sort(() => Math.random() - 0.5)
-                .map((element) => (
-                  <Product
-                    url={element.url}
-                    key={element.id}
-                    id={element.id}
-                    image={element.image}
-                    title={element.title}
-                    price={element.price}
-                    type={''}
-                    size={''}
-                    desc={''}
-                    stock={0}
-                    quantity={0}
-                  />
-                ))}
+              {data.product.map((element) => (
+                <Product
+                  url={element.url}
+                  key={element.id}
+                  id={element.id}
+                  image={element.image}
+                  title={element.title}
+                  price={element.price}
+                  type={''}
+                  size={''}
+                  desc={''}
+                  stock={0}
+                  quantity={0}
+                />
+              ))}
             </div>
           </div>
         </div>
