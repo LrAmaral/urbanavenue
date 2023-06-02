@@ -1,7 +1,6 @@
 'use client'
 
 import { Filter } from '../../components/Filter'
-import { Footer } from '@/components/Footer'
 import { Product } from '@/components/Product'
 import { useEffect, useState } from 'react'
 import data from '@/app/utils/data'
@@ -10,8 +9,6 @@ import {
   handleResetClick,
   lowestPrice,
   higherPrice,
-  bestLowestPrice,
-  bestHigherPrice,
 } from '../../../../functions/ProductFilters'
 
 export default function Products(props: any) {
@@ -22,12 +19,12 @@ export default function Products(props: any) {
 
   // hooks para alterar o título
   useEffect(() => {
-    if (prodType === 'tshirt') {
-      setTitle('T-shirts')
-    } else if (prodType === 'cap') {
-      setTitle('Caps ')
-    } else if (prodType === 'shoe') {
-      setTitle('Shoes ')
+    if (prodType === 'sb') {
+      setTitle('Sb')
+    } else if (prodType === 'jordan') {
+      setTitle('Jordan')
+    } else if (prodType === 'dunk') {
+      setTitle('Dunk')
     }
   }, [prodType])
 
@@ -44,16 +41,6 @@ export default function Products(props: any) {
             higherPrice={(minPrice: number, maxPrice: number) =>
               higherPrice(minPrice, maxPrice, setFilteredProducts)
             }
-            bestLowestPrice={(
-              minPrice: number,
-              maxPrice: number,
-              size: string,
-            ) => bestLowestPrice(minPrice, maxPrice, size, setFilteredProducts)}
-            bestHigherPrice={(
-              minPrice: number,
-              maxPrice: number,
-              size: string,
-            ) => bestHigherPrice(minPrice, maxPrice, size, setFilteredProducts)}
           />
         </div>
         <div className="font-alt xs:col-span-1 lg:col-span-3">
@@ -83,7 +70,6 @@ export default function Products(props: any) {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   )
 }

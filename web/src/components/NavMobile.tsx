@@ -8,9 +8,6 @@ export default function NavMobile() {
         <Link className="transition-colors hover:text-zinc-700" href="/shop">
           shop
         </Link>
-        <Link className="transition-colors hover:text-zinc-700" href="/look">
-          lookbook
-        </Link>
         <Link href="/home">
           <User size={24} />
         </Link>

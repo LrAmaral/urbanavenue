@@ -3,6 +3,8 @@
 import { Eye, EyeSlash } from '@phosphor-icons/react'
 import Link from 'next/link'
 import { useState } from 'react'
+import logo from '../../../assets/logo.svg'
+import Image from 'next/image'
 
 export const Login = () => {
   const [visiPassword, setVisiPassword] = useState(false)
@@ -16,12 +18,8 @@ export const Login = () => {
       <div className="flex w-full flex-row xs:items-center xs:justify-center lg:items-center lg:justify-center">
         <div className="flex w-full flex-col items-center justify-center gap-6">
           <Link href="/">
-            <h1 className="xs:text-4xl lg:text-5xl">UrbanAvenue</h1>
+            <Image src={logo} alt="" width={180} height={40} />
           </Link>
-          <p className="text-justify font-alt leading-relaxed xs:w-3/4 xs:text-lg lg:w-[446px] lg:text-lg">
-            Join us on the streetwear movement and elevate your wardrobe with
-            our trendy and comfortable pieces.
-          </p>
         </div>
       </div>
       <div className="flex w-full flex-col items-center justify-center gap-10">

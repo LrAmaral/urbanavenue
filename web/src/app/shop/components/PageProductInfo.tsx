@@ -23,14 +23,14 @@ export default function PageProductInfo({
         <Link
           type="button"
           href="/shop/cart"
-          className="flex flex-row items-center justify-center bg-zinc-900 p-2 text-center text-white "
+          className="flex flex-row items-center justify-center bg-blue-700 p-2 text-center text-white transition-colors  ease-in-out hover:bg-zinc-900 "
         >
           <p className="">Add to cart</p>
         </Link>
         <Link
           type="button"
           href="#"
-          className="flex items-center justify-center bg-zinc-900 p-2 text-white"
+          className="flex items-center justify-center bg-blue-700 p-2 text-white transition-colors ease-in-out hover:bg-zinc-900"
         >
           Buy
         </Link>

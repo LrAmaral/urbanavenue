@@ -6,19 +6,19 @@ export default function SizeSelection() {
         <input
           className="border-2 px-2 hover:border-zinc-300 hover:bg-zinc-50"
           type="button"
-          value="P"
+          value="40"
           required
         />
         <input
           className="border-2 px-2 hover:border-zinc-300 hover:bg-zinc-50"
           type="button"
-          value="M"
+          value="42"
           required
         />
         <input
           className="border-2 px-2 hover:border-zinc-300 hover:bg-zinc-50"
           type="button"
-          value="G"
+          value="44"
           required
         />
       </div>

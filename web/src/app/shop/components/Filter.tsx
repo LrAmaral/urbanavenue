@@ -1,14 +1,7 @@
 import { FunctionProps } from '../../../interface/filter'
 
 export const Filter = (props: FunctionProps) => {
-  const {
-    Best,
-    onReset,
-    lowestPrice,
-    higherPrice,
-    bestLowestPrice,
-    bestHigherPrice,
-  } = props
+  const { Best, onReset, lowestPrice, higherPrice } = props
 
   function handleResetClick() {
     onReset()
@@ -22,28 +15,28 @@ export const Filter = (props: FunctionProps) => {
         {Best ? (
           <>
             <button
-              onClick={() => Best('P')}
+              onClick={() => Best('40')}
               type="button"
               value="Filter"
               className="flex w-fit items-center"
             >
-              P
+              40
             </button>
             <button
-              onClick={() => Best('M')}
+              onClick={() => Best('42')}
               type="button"
               value="Filter"
               className="flex w-fit items-center"
             >
-              M
+              42
             </button>
             <button
-              onClick={() => Best('G')}
+              onClick={() => Best('44')}
               type="button"
               value="Filter"
               className="flex w-fit items-center"
             >
-              G
+              44
             </button>
           </>
         ) : null}
@@ -65,55 +58,6 @@ export const Filter = (props: FunctionProps) => {
           className="flex w-fit items-center"
         >
           $100 & $150
-        </button>
-        <h4 className="flex justify-center font-bold">Merge Filter:</h4>
-        <button
-          onClick={() => bestLowestPrice(50, 100, 'P')}
-          type="button"
-          value="Filter"
-          className="flex w-fit items-center"
-        >
-          $50 & $100 & P
-        </button>
-        <button
-          onClick={() => bestLowestPrice(50, 100, 'M')}
-          type="button"
-          value="Filter"
-          className="flex w-fit items-center"
-        >
-          $50 & $100 & M
-        </button>
-        <button
-          onClick={() => bestLowestPrice(50, 100, 'G')}
-          type="button"
-          value="Filter"
-          className="flex w-fit items-center"
-        >
-          $50 & $100 & G
-        </button>
-        <button
-          onClick={() => bestHigherPrice(100, 150, 'P')}
-          type="button"
-          value="Filter"
-          className="flex w-fit items-center"
-        >
-          $100 & $150 & P
-        </button>
-        <button
-          onClick={() => bestHigherPrice(100, 150, 'M')}
-          type="button"
-          value="Filter"
-          className="flex w-fit items-center"
-        >
-          $100 & $150 & M
-        </button>
-        <button
-          onClick={() => bestHigherPrice(100, 150, 'G')}
-          type="button"
-          value="Filter"
-          className="flex w-fit items-center"
-        >
-          $100 & $150 & G
         </button>
       </div>
       <div className="flex justify-start">

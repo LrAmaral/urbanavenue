@@ -3,6 +3,8 @@
 import { Eye, EyeSlash } from '@phosphor-icons/react'
 import Link from 'next/link'
 import { useState } from 'react'
+import Image from 'next/image'
+import logo from '../../../assets/logo.svg'
 
 export const Form = () => {
   const [visiPassword, setVisiPassword] = useState(false)
@@ -12,21 +14,13 @@ export const Form = () => {
   }
 
   return (
-    <div className="grid h-screen justify-items-center gap-5 xs:grid-cols-1 xs:p-5 lg:grid-cols-2 lg:p-0">
-      <div className="flex w-full flex-row xs:items-center xs:justify-center lg:items-center lg:justify-center">
-        <div className="flex w-full flex-col items-center justify-center gap-6">
-          <Link href="/">
-            <h1 className="xs:text-4xl lg:text-5xl">UrbanAvenue</h1>
-          </Link>
-          <p className="text-justify font-alt xs:w-3/4 xs:text-lg lg:w-[446px] lg:text-lg">
-            Join us on the streetwear movement and elevate your wardrobe with
-            our trendy and comfortable pieces.
-          </p>
-        </div>
-      </div>
+    <div className="flex h-screen flex-col items-center justify-center gap-6">
+      <Link href="/">
+        <Image src={logo} alt="" width={140} height={40} />
+      </Link>
       <div className="flex w-full flex-col items-center justify-center gap-10 ">
-        <div className="flex flex-col items-center justify-center gap-8 rounded-2xl bg-white p-8 font-alt shadow-2xl xs:w-full lg:w-2/4">
-          <h2 className="text-2xl">Create your account</h2>
+        <div className="flex flex-col items-center justify-center gap-8 rounded-2xl bg-white p-8 font-alt shadow-2xl xs:w-3/4 lg:w-1/4">
+          <h2 className="text-xl">Create your account</h2>
           <form
             action=""
             method="post"
