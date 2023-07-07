@@ -4,7 +4,7 @@ import { ArrowUp } from '@phosphor-icons/react'
 import Link from 'next/link'
 import React from 'react'
 
-function Up() {
+function Up(props: any) {
   return (
     <div>
       <Link

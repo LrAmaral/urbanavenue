@@ -13,7 +13,7 @@ export default function Images({ id, img }: ImageProps) {
         alt="image"
         width={1920}
         height={1080}
-        className="h-full w-full rounded-3xl object-contain xs:h-[20rem] xs:p-4 lg:h-[33rem]"
+        className="w-full rounded-3xl object-contain xs:h-[20rem] xs:p-4 lg:h-[33rem]"
       />
     </div>
   )

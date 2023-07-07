@@ -28,7 +28,7 @@ export default function Main() {
           ))}
         </div>
       </div>
-      <Up />
+      <Up id={'#main'} />
     </div>
   )
 }

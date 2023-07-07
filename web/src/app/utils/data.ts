@@ -8,7 +8,7 @@ const data = {
       size: 'SM',
       image:
         'https://erasedproject.com/cdn/shop/products/PRODUCT_0010_Layer16_720x.jpg?v=1680345660',
-      price: 59.95,
+      price: 49.99,
       desc: 'A comfortable and stylish t-shirt.',
       stock: 20,
     },
@@ -25,7 +25,7 @@ const data = {
       stock: 15,
     },
     {
-      title: 'Sound Shinobi',
+      title: 'Sound Shinobi Black',
       id: '3',
       type: 'sb',
       url: '/shop/pageproduct/3',
@@ -37,10 +37,10 @@ const data = {
       stock: 12,
     },
     {
-      title: 'Sound Shinobi Tshirt',
-      id: '7',
+      title: 'Sound Shinobi White',
+      id: '4',
       type: 'sb',
-      url: '/shop/pageproduct/7',
+      url: '/shop/pageproduct/4',
       size: 'SM',
       image:
         'https://erasedproject.com/cdn/shop/files/sounds_0000s_0003_Layer35_720x.jpg?v=1682762294',
@@ -258,7 +258,7 @@ const data = {
   images: [
     {
       id: '1',
-      img: 'https://images.unsplash.com/photo-1534531304203-b830551771b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1412&q=80',
+      img: 'https://images.unsplash.com/photo-1600430821166-01b4defaff8d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
     },
     {
       id: '2',
@@ -278,11 +278,24 @@ const data = {
     },
     {
       id: '6',
-      img: 'https://images.unsplash.com/photo-1588117260148-b47818741c74?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDl8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60',
+      img: 'https://images.unsplash.com/photo-1596578188127-9ecb16316323?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80',
     },
     {
       id: '7',
       img: 'https://images.unsplash.com/photo-1589902860314-e910697dea18?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80',
+    },
+    {
+      id: '8',
+      img: 'https://images.unsplash.com/photo-1576965316554-14227d2105b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80',
+    },
+    {
+      id: '9',
+      img: 'https://images.unsplash.com/photo-1578854955076-970394ef2512?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80',
+    },
+
+    {
+      id: '10',
+      img: 'https://images.unsplash.com/photo-1586396847415-2c76ae7e79fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80',
     },
   ],
 }

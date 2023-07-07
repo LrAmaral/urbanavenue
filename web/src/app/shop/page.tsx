@@ -4,8 +4,6 @@ import { Product } from '@/components/Product'
 // import { api } from '@/lib/axios'
 // import { ProductProps } from '@/interface/product'
 import data from '../utils/data'
-import Up from '@/components/Up'
-
 export default async function All() {
   // const response = await api.get('/product')
   // const data: ProductProps[] = response.data
@@ -31,7 +29,6 @@ export default async function All() {
           ))}
         </div>
       </div>
-      <Up />
     </div>
   )
 }
