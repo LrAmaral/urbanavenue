@@ -1,7 +1,9 @@
-export default function Dashboard() {
+import LastSale from '../components/LastSale'
+
+export default function Last() {
   return (
     <div className="flex h-screen w-full flex-col items-center justify-center">
-      <h1 className="text-4xl">Urbanavenue</h1>
+      <LastSale />
     </div>
   )
 }

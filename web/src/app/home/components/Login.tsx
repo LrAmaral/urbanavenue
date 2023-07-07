@@ -3,9 +3,6 @@
 import { Eye, EyeSlash } from '@phosphor-icons/react'
 import Link from 'next/link'
 import { useState } from 'react'
-import logo from '../../../assets/logo.svg'
-import Image from 'next/image'
-
 export const Login = () => {
   const [visiPassword, setVisiPassword] = useState(false)
 
@@ -18,7 +15,7 @@ export const Login = () => {
       <div className="flex w-full flex-row xs:items-center xs:justify-center lg:items-center lg:justify-center">
         <div className="flex w-full flex-col items-center justify-center gap-6">
           <Link href="/">
-            <Image src={logo} alt="" width={180} height={40} />
+            <h1 className="font-sans xs:text-3xl lg:text-5xl">UrbanAvenue</h1>
           </Link>
         </div>
       </div>
@@ -78,7 +75,7 @@ export const Login = () => {
           </form>
         </div>
         <div className="flex flex-row gap-1">
-          <p>Dont have an account?</p>
+          <p>Not register yet?</p>
           <Link
             href={'/home'}
             className="text-blue-600 transition-colors hover:text-blue-700 hover:underline"

@@ -18,8 +18,8 @@ const kumbhsans = Kumbh({
 })
 
 export const metadata = {
-  title: 'Vynix',
-  description: 'Shoes Store',
+  title: 'UrbanAvenue®',
+  description: 'Streetwear Online Store',
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {
