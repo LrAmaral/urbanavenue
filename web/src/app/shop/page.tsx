@@ -10,7 +10,7 @@ export default async function All() {
 
   return (
     <div id="main" className="flex flex-col bg-white text-black">
-      <div className="mb-16 mt-12 flex w-full flex-col items-center justify-center">
+      <div className="mb-16 mt-[7rem] flex w-full flex-col items-center justify-center">
         <div className="mt-8 grid gap-20 xs:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           {data.product.map((element) => (
             <Product

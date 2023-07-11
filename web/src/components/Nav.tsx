@@ -2,50 +2,76 @@
 
 import Link from 'next/link'
 import { List, ShoppingCart, User, X } from '@phosphor-icons/react'
-import { useState } from 'react'
-import NavMobile from './NavMobile'
+import { useEffect, useState } from 'react'
 
 export const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false)
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setMenuOpen(false)
+      }
+    }
+
+    window.addEventListener('resize', handleResize)
+
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [])
+
   return (
-    <nav className="w-full bg-white p-4 text-black">
-      <div className="flex w-full p-2 xs:flex-row xs:items-center xs:justify-between xs:gap-0 lg:flex-row lg:items-center lg:justify-evenly lg:gap-[60vh]">
-        <div className="flex items-center justify-center xs:flex-col xs:gap-1 lg:flex-row lg:gap-40 ">
-          <Link href="/" className="font-sans xs:text-3xl lg:text-4xl">
-            <h1 className="font-sans">UrbanAvenue</h1>
+    <div className="fixed left-0 top-0 w-full bg-white p-4 text-black">
+      <nav className="h-10 items-center justify-around md:flex">
+        <div className="flex cursor-pointer items-center justify-between">
+          <Link href="/" className="xs:text-3xl lg:text-4xl">
+            <h1 className="w-fit font-sans">UrbanAvenue</h1>
           </Link>
+          <div className="block cursor-pointer text-3xl md:hidden">
+            <button title="button" onClick={() => setMenuOpen((prev) => !prev)}>
+              {menuOpen ? <X size={36} /> : <List size={36} />}
+            </button>
+          </div>
         </div>
-        <div className="items-end justify-center gap-4 font-alt xs:hidden lg:flex lg:flex-row ">
-          <Link className="transition-colors hover:text-zinc-400" href="/shop">
+
+        <div
+          className={`absolute left-0 z-[-1] w-full bg-white pb-12 pl-9 font-alt transition-all duration-500 ease-in xs:shadow md:static md:z-auto md:flex md:w-auto md:items-center md:pb-0 md:pl-0 md:shadow-none ${
+            menuOpen ? 'top-20 h-screen ' : 'top-[-490px]'
+          }`}
+        >
+          <Link
+            className="mx-2 my-8 flex justify-center transition-colors duration-500 hover:text-zinc-400 xs:text-2xl md:my-0 md:text-base"
+            href="/shop"
+          >
             shop
           </Link>
-          <Link className="transition-colors hover:text-zinc-400" href="/look">
+          <Link
+            className="mx-2  my-8 flex justify-center transition-colors duration-500 hover:text-zinc-400 xs:text-2xl md:my-0 md:text-base"
+            href="/look"
+          >
             lookbook
           </Link>
           <Link
-            className="transition-colors hover:text-zinc-400"
+            className="mx-2  my-8 flex justify-center transition-colors duration-500 hover:text-zinc-400 xs:text-2xl md:my-0 md:text-base"
             href="/home/contact"
           >
             contact
           </Link>
-          <Link href="/home" className="transition-colors hover:text-zinc-400">
-            <User size={24} />
+          <Link
+            href="/home/login"
+            className="mx-2  my-8 flex justify-center transition-colors duration-500 hover:text-zinc-400 xs:text-2xl md:my-0 md:text-base"
+          >
+            {menuOpen ? <User size={36} /> : <User size={24} />}
           </Link>
           <Link
-            className="flex flex-row transition-colors hover:text-zinc-400"
+            className="mx-2  my-8 flex justify-center transition-colors duration-500 hover:text-zinc-400 xs:text-2xl md:my-0 md:text-base"
             href="/shop/cart"
           >
-            <ShoppingCart size={26} />0
+            {menuOpen ? <ShoppingCart size={36} /> : <ShoppingCart size={25} />}
           </Link>
         </div>
-        <div className="flex lg:hidden">
-          <button title="button" onClick={() => setMenuOpen((prev) => !prev)}>
-            {menuOpen ? <X size={36} /> : <List size={36} />}
-          </button>
-        </div>
-      </div>
-      {menuOpen && <NavMobile />}
-    </nav>
+      </nav>
+    </div>
   )
 }

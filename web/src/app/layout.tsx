@@ -1,7 +1,6 @@
 import { ReactNode } from 'react'
 import './globals.css'
 import { Vollkorn, Kumbh_Sans as Kumbh } from '@next/font/google'
-import { Footer } from '@/components/Footer'
 
 const vollkorn = Vollkorn({
   subsets: ['latin'],
@@ -32,7 +31,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         className={`cursor-default select-none bg-white text-black scrollbar-thin scrollbar-track-white scrollbar-thumb-slate-300`}
       >
         {children}
-        <Footer />
       </body>
     </html>
   )

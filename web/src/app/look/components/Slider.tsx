@@ -3,7 +3,7 @@ import data from '../../utils/data'
 
 export default function Slider() {
   return (
-    <main className="flex w-full flex-col items-center justify-center">
+    <main className="mb-6 flex w-full flex-col items-center justify-center">
       <div className="grid w-full xs:grid-cols-2 lg:grid-cols-4">
         {data.images.map((element) => (
           <div

@@ -21,7 +21,7 @@ export const Login = () => {
       </div>
       <div className="flex w-full flex-col items-center justify-center gap-10">
         <div className="flex flex-col items-center justify-center gap-8 rounded-2xl bg-white p-8 font-alt shadow-2xl xs:w-full lg:h-2/4 lg:w-2/4">
-          <h2 className="text-2xl">Access your account</h2>
+          <h2 className="text-xl">Access your account</h2>
           <form
             action=""
             method="post"
@@ -39,7 +39,7 @@ export const Login = () => {
             <label className="relative mt-3 flex w-full flex-col font-semibold">
               Password:
               <input
-                type={visiPassword ? 'password' : 'text'}
+                type={visiPassword ? 'text' : 'password'}
                 title="password"
                 id="password"
                 className="border-2  p-1 px-2 focus:outline-zinc-300 "
@@ -47,7 +47,7 @@ export const Login = () => {
               />
               {visiPassword === false ? (
                 <button type="button" onClick={toggleVisiPassword}>
-                  <Eye
+                  <EyeSlash
                     size={24}
                     weight="thin"
                     className="absolute right-2 top-[30px]"
@@ -55,7 +55,7 @@ export const Login = () => {
                 </button>
               ) : (
                 <button type="button" onClick={toggleVisiPassword}>
-                  <EyeSlash
+                  <Eye
                     size={24}
                     weight="thin"
                     className="absolute right-2 top-[30px]"

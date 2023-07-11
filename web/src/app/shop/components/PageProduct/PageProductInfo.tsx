@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import SizeSelection from './SizeSelection'
+import SizeSelection from '../PageProduct/SizeSelection'
 import { PageProductProps } from '@/interface/pageProduct'
 
 export default function PageProductInfo({

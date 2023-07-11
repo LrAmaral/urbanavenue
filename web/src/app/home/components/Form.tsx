@@ -12,12 +12,16 @@ export const Form = () => {
   }
 
   return (
-    <div className="flex h-screen flex-col items-center justify-center gap-6">
-      <Link href="/">
-        <h1 className="font-sans xs:text-3xl lg:text-5xl">UrbanAvenue</h1>
-      </Link>
+    <div className="grid h-screen justify-items-center gap-5 xs:grid-cols-1 xs:p-5 lg:grid-cols-2 lg:p-0">
+      <div className="flex w-full flex-row xs:items-center xs:justify-center lg:items-center lg:justify-center">
+        <div className="flex w-full flex-col items-center justify-center gap-6">
+          <Link href="/">
+            <h1 className="font-sans xs:text-3xl lg:text-5xl">UrbanAvenue</h1>
+          </Link>
+        </div>
+      </div>
       <div className="flex w-full flex-col items-center justify-center gap-10 ">
-        <div className="flex flex-col items-center justify-center gap-8 rounded-2xl bg-white p-8 font-alt shadow-2xl xs:w-3/4 lg:w-1/4">
+        <div className="flex flex-col items-center justify-center gap-8 rounded-2xl bg-white p-8 font-alt shadow-2xl xs:w-3/4 lg:w-2/4">
           <h2 className="text-xl">Create your account</h2>
           <form
             action=""
@@ -54,7 +58,7 @@ export const Form = () => {
             <label className="relative mt-3 flex w-full flex-col font-semibold">
               Password:
               <input
-                type={visiPassword ? 'password' : 'text'}
+                type={visiPassword ? 'text' : 'password'}
                 title="password"
                 id="password"
                 className=" border-2 p-1 px-2 focus:outline-zinc-300 "
@@ -66,7 +70,7 @@ export const Form = () => {
                   onClick={toggleVisiPassword}
                   className="w-fit"
                 >
-                  <Eye
+                  <EyeSlash
                     size={24}
                     weight="thin"
                     className="absolute right-2 top-[30px]"
@@ -78,7 +82,7 @@ export const Form = () => {
                   onClick={toggleVisiPassword}
                   className="w-fit"
                 >
-                  <EyeSlash
+                  <Eye
                     size={24}
                     weight="thin"
                     className="absolute right-2 top-[30px]"

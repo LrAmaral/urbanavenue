@@ -4,7 +4,7 @@ const data = {
       title: 'Shatter Logo',
       type: 'sb',
       id: '1',
-      url: '/shop/pageproduct/1',
+      url: '/shop/1',
       size: 'SM',
       image:
         'https://erasedproject.com/cdn/shop/products/PRODUCT_0010_Layer16_720x.jpg?v=1680345660',
@@ -16,7 +16,7 @@ const data = {
       title: 'Syndicate Sounds',
       id: '2',
       type: 'sb',
-      url: '/shop/pageproduct/2',
+      url: '/shop/2',
       size: 'SM',
       image:
         'https://erasedproject.com/cdn/shop/files/sounds_0004s_0003_Layer18_720x.jpg?v=1682764109',
@@ -28,11 +28,11 @@ const data = {
       title: 'Sound Shinobi Black',
       id: '3',
       type: 'sb',
-      url: '/shop/pageproduct/3',
+      url: '/shop/3',
       size: 'XG',
       image:
         'https://erasedproject.com/cdn/shop/files/sounds_0000s_0001_Layer36_720x.jpg?v=1682762283',
-      price: 79.9,
+      price: 79.95,
       desc: 'A comfortable and stylish t-shirt.',
       stock: 12,
     },
@@ -40,7 +40,7 @@ const data = {
       title: 'Sound Shinobi White',
       id: '4',
       type: 'sb',
-      url: '/shop/pageproduct/4',
+      url: '/shop/4',
       size: 'SM',
       image:
         'https://erasedproject.com/cdn/shop/files/sounds_0000s_0003_Layer35_720x.jpg?v=1682762294',
@@ -52,7 +52,7 @@ const data = {
       title: 'Boombox Benny White',
       id: '5',
       type: 'force',
-      url: '/shop/pageproduct/5',
+      url: '/shop/5',
       size: 'G',
       image:
         'https://erasedproject.com/cdn/shop/files/sounds_0002s_0002_Layer26_720x.jpg?v=1682763009',
@@ -64,7 +64,7 @@ const data = {
       title: 'Boombox Benny Black',
       id: '6',
       type: 'sb',
-      url: '/shop/pageproduct/6',
+      url: '/shop/6',
       size: 'GG',
       image:
         'https://erasedproject.com/cdn/shop/files/sounds_0002s_0003_Layer25_720x.jpg?v=1682762804',
@@ -76,7 +76,7 @@ const data = {
       title: 'Bad Habits Pigment Dyed',
       id: '7',
       type: 'sb',
-      url: '/shop/pageproduct/7',
+      url: '/shop/7',
       size: 'M',
       image:
         'https://erasedproject.com/cdn/shop/products/PRODUCT_0014_Layer12_720x.jpg?v=1680344299',
@@ -88,7 +88,7 @@ const data = {
       title: 'Turntables Tshirt',
       id: '8',
       type: 'sb',
-      url: '/shop/pageproduct/8',
+      url: '/shop/8',
       size: 'XG',
       image:
         'https://erasedproject.com/cdn/shop/files/sounds_0003s_0003_Layer23_720x.jpg?v=1682763568',
@@ -100,7 +100,7 @@ const data = {
       title: 'Bleached Hoodie Logo Green',
       id: '9',
       type: 'sb',
-      url: '/shop/pageproduct/9',
+      url: '/shop/9',
       size: 'GG',
       image:
         'https://highcompanybr.com/wp-content/uploads/2023/06/Bleached_Hoodie_Logo_Green.jpg',
@@ -112,7 +112,7 @@ const data = {
       title: 'Bleached Hoodie Logo Black',
       id: '10',
       type: 'sb',
-      url: '/shop/pageproduct/10',
+      url: '/shop/10',
       size: 'GG',
       image:
         'https://highcompanybr.com/wp-content/uploads/2023/06/Bleached_Hoodie_Logo_Black.jpg',
@@ -124,7 +124,7 @@ const data = {
       title: 'Hoodie Razor Gray',
       id: '11',
       type: 'sb',
-      url: '/shop/pageproduct/11',
+      url: '/shop/11',
       size: 'XG',
       image:
         'https://highcompanybr.com/wp-content/uploads/2023/06/Hoodie_Razor_HeatherGrey.jpg',
@@ -136,7 +136,7 @@ const data = {
       title: 'Hoodie Razor Black',
       id: '12',
       type: 'sb',
-      url: '/shop/pageproduct/12',
+      url: '/shop/12',
       size: 'G',
       image:
         'https://highcompanybr.com/wp-content/uploads/2023/06/Hoodie_Razor_Black.jpg',
@@ -148,7 +148,7 @@ const data = {
       title: 'Tee Comet White',
       id: '13',
       type: 'sb',
-      url: '/shop/pageproduct/13',
+      url: '/shop/13',
       size: 'M',
       image:
         'https://highcompanybr.com/wp-content/uploads/2023/06/Tee_Comet_White-600x600.jpg',
@@ -160,7 +160,7 @@ const data = {
       title: 'Tee Comet Black',
       id: '14',
       type: 'sb',
-      url: '/shop/pageproduct/14',
+      url: '/shop/14',
       size: 'M',
       image:
         'https://highcompanybr.com/wp-content/uploads/2023/06/Tee_Comet_Black-600x600.jpg',
@@ -172,7 +172,7 @@ const data = {
       title: 'Tee Razor Black',
       id: '15',
       type: 'sb',
-      url: '/shop/pageproduct/15',
+      url: '/shop/15',
       size: 'GG',
       image:
         'https://highcompanybr.com/wp-content/uploads/2023/06/Tee_Razor_Black_Back.jpg',
@@ -184,7 +184,7 @@ const data = {
       title: 'Tee Razor White',
       id: '16',
       type: 'sb',
-      url: '/shop/pageproduct/16',
+      url: '/shop/16',
       size: 'S',
       image:
         'https://highcompanybr.com/wp-content/uploads/2023/06/Tee_Razor_White_Back.jpg',
@@ -196,7 +196,7 @@ const data = {
       title: 'Jeans Pants Blue',
       id: '17',
       type: 'sb',
-      url: '/shop/pageproduct/17',
+      url: '/shop/17',
       size: 'S',
       image:
         'https://highcompanybr.com/wp-content/uploads/2023/03/Jeans_Pants_Logo_Blue.jpg',
@@ -208,7 +208,7 @@ const data = {
       title: 'Jeans Pants x Popeye Blue',
       id: '18',
       type: 'sb',
-      url: '/shop/pageproduct/18',
+      url: '/shop/18',
       size: 'S',
       image:
         'https://highcompanybr.com/wp-content/uploads/2023/05/Jeans_Pants_High_x_Popeye_Navy.jpg',
@@ -220,7 +220,7 @@ const data = {
       title: 'Jeans Pants Black',
       id: '19',
       type: 'sb',
-      url: '/shop/pageproduct/19',
+      url: '/shop/19',
       size: 'S',
       image:
         'https://highcompanybr.com/wp-content/uploads/2023/03/Jeans_Pants_Logo_Black.jpg',
@@ -232,7 +232,7 @@ const data = {
       title: 'Chino Pants H-Line Navy',
       id: '20',
       type: 'sb',
-      url: '/shop/pageproduct/20',
+      url: '/shop/20',
       size: 'S',
       image:
         'https://highcompanybr.com/wp-content/uploads/2023/03/Chino_Pants_Logo_Navy.jpg',

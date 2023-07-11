@@ -1,9 +1,9 @@
 import Image from 'next/image'
 // import { api } from '@/lib/axios'
-import DescProduct from '../../components/DescProduct'
-import PageProductInfo from '../../components/PageProductInfo'
+import DescProduct from '../components/PageProduct/DescProduct'
+import PageProductInfo from '../components/PageProduct/PageProductInfo'
 // import { ProductProps } from '@/interface/product'
-import data from '../../../utils/data'
+import data from '../../utils/data'
 
 export default async function PageProduct(props: any) {
   // const prodId = props.params.id

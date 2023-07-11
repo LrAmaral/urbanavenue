@@ -1,36 +1,41 @@
-'use client'
-
 import data from '@/app/utils/data'
-import { Footer } from '@/components/Footer'
-import ProductCart from '../components/ProductCart'
-import { ShoppingCart } from '@phosphor-icons/react'
+import ProductCart from './components/ProductCart'
+import { CartProps } from '@/interface/cart'
+import CartIcon from './components/CartIcon'
 
-export default function Cart() {
+export const metadata = {
+  title: 'Cart | UrbanAvenue®',
+  description: 'Shop Cart',
+}
+
+export default function Cart(props: CartProps) {
+  // const prodId = props.id
+
   return (
-    <div className="flex h-auto flex-col items-center justify-center bg-white text-black">
-      <div className="relative mb-10 mt-10 flex h-screen flex-col items-center justify-start rounded-3xl border-2 border-slate-500 bg-slate-50 xs:w-3/4 lg:w-2/4">
-        <div className="absolute left-0 top-0 ml-12 mt-8">
-          <ShoppingCart size={42} className="" />
-          <p>Cart</p>
-        </div>
-        <div className="mt-10 flex flex-col items-center justify-center">
+    <div className="flex h-screen w-full flex-col items-center justify-center">
+      <div className="flex w-full flex-col items-center justify-center">
+        <CartIcon />
+        <div className="flex flex-col items-center justify-center">
           {data.product
             .filter((element) => element.type)
             .slice(0, 1)
-            .sort(() => Math.random() - 0.5)
             .map((element) => (
-              <ProductCart
-                id={element.id}
+              <div
                 key={element.id}
-                image={element.image}
-                title={element.title}
-                price={element.price}
-                unity={element.stock}
-              />
+                className="flex flex-row items-center justify-center"
+              >
+                <ProductCart
+                  id={element.id}
+                  key={element.id}
+                  image={element.image}
+                  title={element.title}
+                  price={element.price}
+                  unity={element.stock}
+                />
+              </div>
             ))}
         </div>
       </div>
-      <Footer />
     </div>
   )
 }

@@ -10,8 +10,8 @@ export default function Cart({ id, title, price, image, unity }: CartProps) {
       <div>
         <Image
           src={image}
-          width={320}
-          height={20}
+          width={220}
+          height={50}
           alt="image"
           className="rounded-3xl object-contain"
         ></Image>

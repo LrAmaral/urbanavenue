@@ -1,15 +1,14 @@
-'use client'
-
-import Link from 'next/link'
 import Email from '../components/Email'
+
+export const metadata = {
+  title: 'contact | UrbanAvenue®',
+  description: 'Shop',
+}
 
 export default function Contact() {
   return (
     <div className="flex h-screen w-full flex-col items-center justify-center gap-8 font-alt">
-      <Link href="/" className="font-sans xs:text-3xl lg:text-4xl">
-        <h1 className="font-sans">UrbanAvenue</h1>
-      </Link>
-      <div className="flex w-2/4 flex-col items-start gap-4 text-justify">
+      <div className="flex flex-col items-start gap-4 text-justify xs:w-3/4 lg:w-2/4">
         <h2 className="text-2xl font-bold">Info & Contact</h2>
         <p>
           Privacy and Security: We value your privacy and take appropriate

@@ -1,3 +1,5 @@
+'use client'
+
 import { EnvelopeSimple } from '@phosphor-icons/react'
 import Link from 'next/link'
 import React, { useState } from 'react'
@@ -12,16 +14,16 @@ export default function Email() {
 
   return (
     <section>
-      <h2 className="text-xl font-bold">Contact</h2>
+      <h2 className="text-2xl font-bold">Contact</h2>
       <Link
         href={`mailto:amaralrdev@gmail.com?body=${encodeURIComponent(
           emailText,
         )}`}
         target="_blank"
-        className="flex items-center justify-center gap-1 font-bold text-blue-600 hover:text-blue-800"
+        className="flex flex-row items-center justify-center gap-1 font-bold text-blue-600 hover:text-blue-800 xs:text-lg lg:text-xl"
         onClick={handleEmailClick}
       >
-        <EnvelopeSimple size={20} />
+        <EnvelopeSimple size={24} />
         contact@urbanavenue.com.br
       </Link>
     </section>
