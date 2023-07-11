@@ -4,11 +4,6 @@ import { Footer } from '@/components/Footer'
 import { Nav } from '@/components/Nav'
 import { User } from '@phosphor-icons/react'
 
-export const metadata = {
-  title: `${User} | UrbanAvenue®`,
-  description: 'Shop',
-}
-
 export default function Profile(props: any) {
   return (
     <div className="flex h-auto flex-col items-center justify-center bg-white text-black">
