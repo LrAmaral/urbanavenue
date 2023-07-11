@@ -1,6 +1,5 @@
 import data from '@/app/utils/data'
 import ProductCart from './components/ProductCart'
-import { CartProps } from '@/interface/cart'
 import CartIcon from './components/CartIcon'
 
 export const metadata = {
@@ -8,7 +7,7 @@ export const metadata = {
   description: 'Shop Cart',
 }
 
-export default function Cart(props: CartProps) {
+export default function Cart() {
   // const prodId = props.id
 
   return (

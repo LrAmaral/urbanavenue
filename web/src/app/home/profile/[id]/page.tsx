@@ -4,7 +4,7 @@ import { Footer } from '@/components/Footer'
 import { Nav } from '@/components/Nav'
 import { User } from '@phosphor-icons/react'
 
-export default function Profile(props: any) {
+export default function Profile() {
   return (
     <div className="flex h-auto flex-col items-center justify-center bg-white text-black">
       <Nav />
