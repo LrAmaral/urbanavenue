@@ -1,7 +1,7 @@
 'use client'
 
-import { Footer } from '@/components/Footer'
-import { Nav } from '@/components/Nav'
+import { Footer } from '@/components/Layout/Footer'
+import { Nav } from '@/components/Layout/Nav'
 import { User } from '@phosphor-icons/react'
 
 export default function Profile() {
