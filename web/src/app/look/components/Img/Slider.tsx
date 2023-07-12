@@ -1,5 +1,5 @@
-import Images from './Img/Images'
-import data from '../../utils/data'
+import Images from './Images'
+import data from '../../../utils/data'
 
 export default function Slider() {
   return (

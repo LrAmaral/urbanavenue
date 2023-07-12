@@ -21,8 +21,19 @@ export const Nav = () => {
     }
   }, [])
 
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.classList.add('overflow-hidden')
+    } else {
+      document.body.classList.remove('overflow-hidden')
+    }
+  }, [menuOpen])
+
   return (
-    <div className="absolute left-0 top-0 w-full bg-white p-4 text-black">
+    <div
+      id="nav"
+      className="absolute left-0 top-0 w-full bg-white p-4 text-black"
+    >
       <nav className="h-10 items-center justify-around md:flex">
         <div className="flex cursor-pointer items-center justify-between">
           <Link href="/" className="xs:text-3xl lg:text-4xl">
@@ -37,7 +48,7 @@ export const Nav = () => {
 
         <div
           className={`absolute left-0 w-full bg-white pb-12 pl-9 font-alt transition-all duration-500 ease-in xs:shadow md:static md:flex md:w-auto md:items-center md:pb-0 md:pl-0 md:shadow-none ${
-            menuOpen ? 'top-20 h-screen' : 'top-[-490px]'
+            menuOpen ? 'top-16 h-screen' : 'top-[-490px]'
           }`}
         >
           <Link

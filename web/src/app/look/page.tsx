@@ -1,5 +1,5 @@
 import { Nav } from '@/components/Layout/Nav'
-import Slider from './components/Slider'
+import Slider from './components/Img/Slider'
 
 export default function Look() {
   return (
