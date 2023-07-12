@@ -1,4 +1,4 @@
-import { Nav } from '@/components/Nav'
+import { Nav } from '@/components/Layout/Nav'
 import Slider from './components/Slider'
 
 export default function Look() {

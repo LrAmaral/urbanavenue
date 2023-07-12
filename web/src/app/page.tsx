@@ -1,14 +1,14 @@
-import { Nav } from '@/components/Nav'
+import { Nav } from '@/components/Layout/Nav'
 import { Product } from '@/components/Product'
 import data from './utils/data'
 import Up from '@/components/Up'
-import { Footer } from '@/components/Footer'
+import { Footer } from '@/components/Layout/Footer'
 
 export default function Main() {
   return (
     <div
       id="main"
-      className="flex w-full flex-col items-center justify-center bg-white"
+      className="relative flex w-full flex-col items-center justify-center bg-white"
     >
       <Nav />
       <div className="mb-16 mt-[7rem] flex w-full flex-col items-center justify-center">

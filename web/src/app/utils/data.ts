@@ -21,7 +21,7 @@ const data = {
       image:
         'https://erasedproject.com/cdn/shop/files/sounds_0004s_0003_Layer18_720x.jpg?v=1682764109',
       price: 69.95,
-      desc: 'A comfortable shoe',
+      desc: 'A comfortable t-shirt',
       stock: 15,
     },
     {

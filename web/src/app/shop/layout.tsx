@@ -1,5 +1,5 @@
-import { Footer } from '@/components/Footer'
-import { Nav } from '@/components/Nav'
+import { Footer } from '@/components/Layout/Footer'
+import { Nav } from '@/components/Layout/Nav'
 import { ReactNode } from 'react'
 
 export const metadata = {
